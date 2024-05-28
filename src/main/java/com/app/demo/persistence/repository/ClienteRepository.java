@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PersonRepository extends JpaRepository<Person, Long> {
-    boolean existsByFechaAndHora(String fecha, String hora);
+public interface ClienteRepository extends JpaRepository<Person, Long> {
+
 }

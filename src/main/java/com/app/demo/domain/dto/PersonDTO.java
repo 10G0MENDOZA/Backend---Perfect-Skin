@@ -1,17 +1,37 @@
 package com.app.demo.domain.dto;
 
 public class PersonDTO {
-    private String cedula;
+    private Long id;
     private String nombre;
     private String apellido;
+    private String cedula;
     private int edad;
+    private String correo;
+    private String fecha;
+    private String hora;
 
-    public String getCedula() {
-        return cedula;
+    public PersonDTO() {
     }
 
-    public void setCedula(String cedula) {
+    public PersonDTO(Long id, String nombre, String apellido, String cedula, int edad, String correo, String fecha, String hora) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
         this.cedula = cedula;
+        this.edad = edad;
+        this.correo = correo;
+        this.fecha = fecha;
+        this.hora = hora; // Almacenar en formato 24 horas
+    }
+
+    // Getters and Setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -30,12 +50,43 @@ public class PersonDTO {
         this.apellido = apellido;
     }
 
-    // Getter and setter for edad
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
     public int getEdad() {
         return edad;
     }
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora; // Almacenar en formato 24 horas
     }
 }

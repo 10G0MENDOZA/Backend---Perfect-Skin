@@ -30,6 +30,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springframework.boot:spring-boot-starter-tomcat:1.2.1.RELEASE'
 	implementation 'mysql:mysql-connector-java:5.1.13'
+	implementation 'javax.mail:mail:1.4.7'
 }
 
 

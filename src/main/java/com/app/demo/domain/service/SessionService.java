@@ -1,5 +1,4 @@
 package com.app.demo.domain.service;
-
 import com.app.demo.domain.dto.PersonDTO;
 import com.app.demo.domain.dto.SessionRequest;
 import com.app.demo.domain.mapper.PersonMapper;
@@ -21,4 +20,5 @@ public class SessionService {
         Users user = sessionRepository.findByNameAndPassword(sessionRequest.getName(), sessionRequest.getPassword());
         return user != null;
     }
+
 }
